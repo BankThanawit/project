@@ -1,786 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-  <title>Brainwave</title>
+    <title>Tooplate's Little Fashion</title>
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
-<body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/1.png" alt="" />
-            <span>
-              Stationery
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <link href="css/tooplate-little-fashion.css" rel="stylesheet" />
+    <!--
+
+Tooplate 2127 Little Fashion
+
+https://www.tooplate.com/view/2127-little-fashion
+
+-->
+  </head>
+
+  <body>
+    <section class="preloader">
+      <div class="spinner">
+        <span class="sk-inner-circle"></span>
+      </div>
+    </section>
+
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-2">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
+          <a class="navbar-brand" href="index.html">
+            <strong><span>Stationary</span> Equipment</strong>
+          </a>
+
+          <div class="d-lg-none">
+            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+                <a class="nav-link" href="about.html">Story</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQs</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
-            <div class="user_option">
-              <div class="login_btn-container">
-                <a href="">
-                  Login
-                </a>
-              </div>
-              <form class="form-inline my-2 my-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+
+            <div class="d-none d-lg-block">
+              <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+              <a href="product-detail.html" class="bi-bag custom-icon"></a>
             </div>
           </div>
-          <div class="call_btn">
-            <a href="">
-              Call: +666 4918 4054
-            </a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+        </div>
+      </nav>
 
-    <section class="slider_section">
-      <div class="container-fluid">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+      <section class="slick-slideshow">
+        <div class="slick-custom">
+          <img
+            src="images/slideshow/medium-shot-business-women-high-five.jpeg"
+            class="img-fluid"
+            alt=""
+          />
+
+          <div class="slick-bottom">
+            <div class="container">
               <div class="row">
-                <div class="col-md-3 col-lg-2 offset-md-2">
-                  <div class="detail-box">
-                    <h1>
-                      Make Design
-                    </h1>
-                    <p>
-                      About stationery in our hearts
-                    </p>
-                    <div>
-                      <a href="">
-                        Read More
-                      </a>
+                <div class="col-lg-6 col-10">
+                  <h1 class="slick-title">Cool Fashion</h1>
+
+                  <p class="lead text-white mt-lg-3 mb-lg-5">
+                    Little fashion template comes with total 8 HTML pages
+                    provided by Tooplate website.
+                  </p>
+
+                  <a href="about.html" class="btn custom-btn"
+                    >Learn more about us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slick-custom">
+          <img
+            src="images/slideshow/team-meeting-renewable-energy-project.jpeg"
+            class="img-fluid"
+            alt=""
+          />
+
+          <div class="slick-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-10">
+                  <h1 class="slick-title">New Design</h1>
+
+                  <p class="lead text-white mt-lg-3 mb-lg-5">
+                    Please share this Little Fashion template to your friends.
+                    Thank you for supporting us.
+                  </p>
+
+                  <a href="product.html" class="btn custom-btn"
+                    >Explore products</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slick-custom">
+          <img
+            src="images/slideshow/two-business-partners-working-together-office-computer.jpeg"
+            class="img-fluid"
+            alt=""
+          />
+
+          <div class="slick-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-10">
+                  <h1 class="slick-title">Talk to us</h1>
+
+                  <p class="lead text-white mt-lg-3 mb-lg-5">
+                    Tooplate is one of the best HTML CSS template websites for
+                    everyone.
+                  </p>
+
+                  <a href="contact.html" class="btn custom-btn">Work with us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="mb-5">Get started with <span>Little</span> Fashion</h2>
+            </div>
+
+            <div class="col-lg-2 col-12 mt-auto mb-auto">
+              <ul
+                class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Introduction
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-youtube-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-youtube"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-youtube"
+                    aria-selected="true"
+                  >
+                    How we work?
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-skill"
+                    aria-selected="false"
+                  >
+                    Capabilites
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-10 col-12">
+              <div class="tab-content mt-2" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-7 col-12">
+                      <img
+                        src="images/pim-chu-z6NZ76_UTDI-unsplash.jpeg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                      <div
+                        class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5"
+                      >
+                        <h4 class="mb-3">
+                          Good <span>Design</span> <br />Ideas for
+                          <span>your</span> fashion
+                        </h4>
+
+                        <p>
+                          Little Fashion templates comes with
+                          <a href="sign-in.html">sign in</a> /
+                          <a href="sign-up.html">sign up</a> pages, product
+                          listing / product detail, about, FAQs, and contact
+                          page.
+                        </p>
+
+                        <p>
+                          Since this HTML template is based on Boostrap 5 CSS
+                          library, you can feel free to add more components as
+                          you need.
+                        </p>
+
+                        <div class="mt-2 mt-lg-auto">
+                          <a href="about.html" class="custom-link mb-2">
+                            Learn more about us
+                            <i class="bi-arrow-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-7 col-lg-8">
-                  <div class="img-box">
-                    <img src="images/hero.png" alt="" />
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-youtube"
+                  role="tabpanel"
+                  aria-labelledby="pills-youtube-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-7 col-12">
+                      <div class="ratio ratio-16x9">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/f_7JqPDWhfw?controls=0"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                      <div
+                        class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5"
+                      >
+                        <h4 class="mb-3">Life at Studio</h4>
+
+                        <p>
+                          Over three years in business, We’ve had the chance to
+                          work on a variety of projects, with companies
+                        </p>
+
+                        <p>Custom work is branding, web design, UI/UX design</p>
+
+                        <div class="mt-2 mt-lg-auto">
+                          <a href="contact.html" class="custom-link mb-2">
+                            Work with us
+                            <i class="bi-arrow-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="pills-skill-tab"
+                >
+                  <div class="row">
+                    <div class="col-lg-7 col-12">
+                      <img
+                        src="images/cody-lannom-G95AReIh_Ko-unsplash.jpeg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                      <div
+                        class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5"
+                      >
+                        <h4 class="mb-3">What can help you?</h4>
+
+                        <p>
+                          Over three years in business, We’ve had the chance on
+                          projects
+                        </p>
+
+                        <div class="skill-thumb mt-3">
+                          <strong>Branding</strong>
+                          <span class="float-end">90%</span>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-primary"
+                              role="progressbar"
+                              aria-valuenow="90"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 90%"
+                            ></div>
+                          </div>
+
+                          <strong>Design & Stragety</strong>
+                          <span class="float-end">70%</span>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-primary"
+                              role="progressbar"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+
+                          <strong>Online Platform</strong>
+                          <span class="float-end">80%</span>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-primary"
+                              role="progressbar"
+                              aria-valuenow="80"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="mt-2 mt-lg-auto">
+                          <a href="products.html" class="custom-link mb-2">
+                            Explore products
+                            <i class="bi-arrow-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- custom menu -->
-  <div class="custom_menu-container">
-    <div class="container">
-      <div class="custom_menu">
-        <ul class="navbar-nav ">
-          <li class="nav-item active">
-            <a class="nav-link pl-0" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service.html">Services</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact us</a>
-          </li>
-        </ul>
-        <div class="user_option">
-          <div class="login_btn-container">
-            <a href="">
-              Login
-            </a>
-          </div>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- custom menu -->
-
-  <!-- about section -->
-
-  <section class="about_section layout_padding mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="" />
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="detail-box">
-            <div class="custom_heading-container">
-              <h2>
-                About Design
-              </h2>
+      </section>
+
+      <section class="front-product">
+        <div class="container-fluid p-0">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <img
+                src="images/retail-shop-owner-mask-social-distancing-shopping.jpg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
 
-            <p>
-              It is a long established fact that a reader will be distracted
-              by the readable content of a page when looking at its layout.
-              The point of using Lorem Ipsum is that it has a more-or-less
-              normal distribution of letters, as opposed to using 'Content
-              here , content here', making it
-            </p>
-            <div>
-              <a href="">
-                About More
-              </a>
+            <div class="col-lg-6 col-12">
+              <div class="px-5 py-5 py-lg-0">
+                <h2 class="mb-4"><span>Retail</span> shop owners</h2>
+
+                <p class="lead mb-4">
+                  Credits go to Unsplash and FreePik websites for images used in
+                  this Little Fashion by Tooplate.
+                </p>
+
+                <a href="products.html" class="custom-link">
+                  Explore Products
+                  <i class="bi-arrow-right ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- end about section -->
-
-  <!-- do section -->
-  <section class="do_section layout_padding-bottom">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          What we do
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="content-box bg-red">
-            <div class="img-box">
-              <img src="images/idea.png" alt="" />
+      <section class="featured-product section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="mb-5">Featured Products</h2>
             </div>
-            <div class="detail-box">
-              <h6>
-                Original Ideas
-              </h6>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content
-              </p>
+
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="product-thumb">
+                <a href="product-detail.html">
+                  <img
+                    src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg"
+                    class="img-fluid product-image"
+                    alt=""
+                  />
+                </a>
+
+                <div class="product-top d-flex">
+                  <span class="product-alert me-auto">New Arrival</span>
+
+                  <a href="#" class="bi-heart-fill product-icon"></a>
+                </div>
+
+                <div class="product-info d-flex">
+                  <div>
+                    <h5 class="product-title mb-0">
+                      <a href="product-detail.html" class="product-title-link"
+                        >Tree pot</a
+                      >
+                    </h5>
+
+                    <p class="product-p">Original package design from house</p>
+                  </div>
+
+                  <small class="product-price text-muted ms-auto mt-auto mb-5"
+                    >$25</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="product-thumb">
+                <a href="product-detail.html">
+                  <img
+                    src="images/product/jordan-nix-CkCUvwMXAac-unsplash.jpeg"
+                    class="img-fluid product-image"
+                    alt=""
+                  />
+                </a>
+
+                <div class="product-top d-flex">
+                  <span class="product-alert">Low Price</span>
+
+                  <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                </div>
+
+                <div class="product-info d-flex">
+                  <div>
+                    <h5 class="product-title mb-0">
+                      <a href="product-detail.html" class="product-title-link"
+                        >Fashion Set</a
+                      >
+                    </h5>
+
+                    <p class="product-p">Costume Package</p>
+                  </div>
+
+                  <small class="product-price text-muted ms-auto mt-auto mb-5"
+                    >$35</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-12">
+              <div class="product-thumb">
+                <a href="product-detail.html">
+                  <img
+                    src="images/product/nature-zen-3Dn1BZZv3m8-unsplash.jpeg"
+                    class="img-fluid product-image"
+                    alt=""
+                  />
+                </a>
+
+                <div class="product-top d-flex">
+                  <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                </div>
+
+                <div class="product-info d-flex">
+                  <div>
+                    <h5 class="product-title mb-0">
+                      <a href="product-detail.html" class="product-title-link"
+                        >Juice Drinks</a
+                      >
+                    </h5>
+
+                    <p class="product-p">Nature made another world</p>
+                  </div>
+
+                  <small class="product-price text-muted ms-auto mt-auto mb-5"
+                    >$45</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 text-center">
+              <a href="products.html" class="view-all">View All Products</a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="content-box bg-green">
-            <div class="img-box">
-              <img src="images/controller.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <h6>
-                Great apps
-              </h6>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="content-box bg-red">
-            <div class="img-box">
-              <img src="images/monitor.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <h6>
-                High Resolution
-              </h6>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="content-box bg-green">
-            <div class="img-box">
-              <img src="images/rocket-ship.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <h6>
-                Fast Loading
-              </h6>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-  <!-- end do section -->
-  <!-- skill section -->
-
-  <section class="skill_section layout_padding2">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Our Skills
-        </h2>
-      </div>
-      <div class="skill_padding">
+    <footer class="site-footer">
+      <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="box">
-              <div class="circle" id="circles-1"></div>
-              <h6>
-                Adobe Photoshop
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="box">
-              <div class="circle" id="circles-2"></div>
-              <h6>
-                Adobe Ilustrator
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="box">
-              <div class="circle" id="circles-3"></div>
-              <h6>
-                After Effects
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="box">
-              <div class="circle" id="circles-4"></div>
-              <h6>
-                Adobe XD
-              </h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end skill section -->
-
-  <!-- portfolio section -->
-  <section class="portfolio_section layout_padding">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Our Portfolio
-        </h2>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="box b-1">
-                <img src="images/p-1.png" alt="" />
-                <h4>
-                  Logo Design
-                </h4>
-              </div>
-              <div class="box b-2">
-                <img src="images/p-2.png" alt="" />
-                <h4>
-                  Coding
-                </h4>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="box b-3">
-                <img src="images/p-3.png" alt="" />
-                <h4>
-                  Bike Design
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="box b-4">
-                <img src="images/p-4.png" alt="" />
-                <h4>
-                  Flower Design
-                </h4>
-              </div>
-              <div class="box b-5">
-                <img src="images/p-5.png" alt="" />
-                <h4>
-                  Website Design
-                </h4>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="box b-6">
-                <img src="images/p-6.jpg" alt="" />
-                <h4>
-                  More Design
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end portfolio section -->
-
-  <!-- client section -->
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="client_container layout_padding2">
-              <div class="client_box b-1">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client-1.jpg" alt="" />
-                  </div>
-                  <div class="name">
-                    <h5>
-                      smirth jon
-                    </h5>
-                    <p>
-                      client
-                    </p>
-                  </div>
-                </div>
-                <div class="detail">
-                  <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content
-                    here, content here', making it look like readable English. Many
-                    desktop publishing packages and web page editors now use Lorem
-                    Ipsum as their default model It is a long established fact that
-                    a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as
-                    opposed to using 'Content here, content here', making it look
-                    like readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                  </p>
-                </div>
-              </div>
-              <div class="client_box b-2">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client-2.jpg" alt="" />
-                  </div>
-                  <div class="name">
-                    <h5>
-                      smirth den
-                    </h5>
-                    <p>
-                      client
-                    </p>
-                  </div>
-                </div>
-                <div class="detail">
-                  <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content
-                    here, content here', making it look like readable English. Many
-                    desktop publishing packages and web page editors now use Lorem
-                    Ipsum as their default model It is a long established fact that
-                    a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as
-                    opposed to using 'Content here, content here', making it look
-                    like readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="client_container layout_padding2">
-              <div class="client_box b-1">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client-1.jpg" alt="" />
-                  </div>
-                  <div class="name">
-                    <h5>
-                      smirth jon
-                    </h5>
-                    <p>
-                      client
-                    </p>
-                  </div>
-                </div>
-                <div class="detail">
-                  <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content
-                    here, content here', making it look like readable English. Many
-                    desktop publishing packages and web page editors now use Lorem
-                    Ipsum as their default model It is a long established fact that
-                    a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as
-                    opposed to using 'Content here, content here', making it look
-                    like readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                  </p>
-                </div>
-              </div>
-              <div class="client_box b-2">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client-2.jpg" alt="" />
-                  </div>
-                  <div class="name">
-                    <h5>
-                      smirth den
-                    </h5>
-                    <p>
-                      client
-                    </p>
-                  </div>
-                </div>
-                <div class="detail">
-                  <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content
-                    here, content here', making it look like readable English. Many
-                    desktop publishing packages and web page editors now use Lorem
-                    Ipsum as their default model It is a long established fact that
-                    a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as
-                    opposed to using 'Content here, content here', making it look
-                    like readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="client_container layout_padding2">
-              <div class="client_box b-1">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client-1.jpg" alt="" />
-                  </div>
-                  <div class="name">
-                    <h5>
-                      smirth jon
-                    </h5>
-                    <p>
-                      client
-                    </p>
-                  </div>
-                </div>
-                <div class="detail">
-                  <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content
-                    here, content here', making it look like readable English. Many
-                    desktop publishing packages and web page editors now use Lorem
-                    Ipsum as their default model It is a long established fact that
-                    a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as
-                    opposed to using 'Content here, content here', making it look
-                    like readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                  </p>
-                </div>
-              </div>
-              <div class="client_box b-2">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client-2.jpg" alt="" />
-                  </div>
-                  <div class="name">
-                    <h5>
-                      smirth den
-                    </h5>
-                    <p>
-                      client
-                    </p>
-                  </div>
-                </div>
-                <div class="detail">
-                  <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content
-                    here, content here', making it look like readable English. Many
-                    desktop publishing packages and web page editors now use Lorem
-                    Ipsum as their default model It is a long established fact that
-                    a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as
-                    opposed to using 'Content here, content here', making it look
-                    like readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
-  <!-- contact section -->
-
-  <section class="contact_section ">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
-          <h2 class="custom_heading">Contact Us</h2>
-          <form action="#">
-            <div>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" placeholder="Pone Number" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex  mt-4 ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/contact.jpg" alt="" class="w-100" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding-top layout_padding2-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="info_links pl-lg-5">
-            <h4>
-              Menu
+          <div class="col-lg-3 col-10 me-auto mb-4">
+            <h4 class="text-white mb-3">
+              <a href="index.html">Little</a> Fashion
             </h4>
-            <ul>
-              <li class="active">
-                <a href="index.html">
-                  Home
-                </a>
+            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
+              Copyright © 2022 <strong>Little Fashion</strong>
+            </p>
+            <br />
+            <p class="copyright-text">
+              Designed by
+              <a href="https://www.tooplate.com/" target="_blank">Tooplate</a>
+            </p>
+          </div>
+
+          <div class="col-lg-5 col-8">
+            <h5 class="text-white mb-3">Sitemap</h5>
+
+            <ul class="footer-menu d-flex flex-wrap">
+              <li class="footer-menu-item">
+                <a href="about.html" class="footer-menu-link">Story</a>
               </li>
-              <li>
-                <a href="about.html">
-                  About
-                </a>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Products</a>
               </li>
-              <li>
-                <a class="" href="portfolio.html">Portfolio </a>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Privacy policy</a>
               </li>
-              <li>
-                <a class="" href="service.html">Services</a>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">FAQs</a>
               </li>
-              <li>
-                <a href="contact.html">
-                  Contact Us
-                </a>
+
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Contact</a>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_contact">
-            <h4>
-              Location
-            </h4>
-            <div>
-              <img src="images/location.png" alt="" />
-              <p>
-                104 loram ipusm
-              </p>
-            </div>
-            <div>
-              <img src="images/telephone.png" alt="" />
-              <p>
-                ( +01 1234567890 )
-              </p>
-            </div>
-            <div>
-              <img src="images/envelope.png" alt="" />
-              <p>
-                demo@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="info_social">
-            <h4>
-              Social Link
-            </h4>
-            <div class="social_container">
-              <div>
-                <a href="">
-                  <img src="images/facebook-logo.png" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <img src="images/twitter-logo.png" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <img src="images/instagram.png" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <img src="images/linkedin-sign.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_form">
-            <h4>
-              Newsletter
-            </h4>
-            <form action="#">
-              <input type="text" placeholder="Enter Your Email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
+          <div class="col-lg-3 col-4">
+            <h5 class="text-white mb-3">Social</h5>
+
+            <ul class="social-icon">
+              <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+              <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+              <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+              <li><a href="#" class="social-icon-link bi-skype"></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- end info_section -->
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </footer>
-  <!-- footer section -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/circles.min.js"></script>
-  <script src="js/custom.js"></script>
-
-
-</body>
-
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
