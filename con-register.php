@@ -17,6 +17,7 @@
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";
+		header("refresh: 2; url=http://localhost/mini/index.html");
 		$stmt->close();
 		$conn->close();
 	}
