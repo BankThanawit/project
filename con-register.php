@@ -1,5 +1,4 @@
 <?php
-    $user_id = $_POST['user_id'];
     $user_name = $_POST['user_name'];
     $user_fname = $_POST['user_fname'];
     $user_lname = $_POST['user_lname'];
@@ -12,12 +11,13 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into user_(user_id, user_name, user_fname, user_lname, address, pass, phonenumber) values(?, ?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssssss", $user_id, $user_name, $user_fname, $user_lname, $address, $pass, $phonenumber);
+		$stmt = $conn->prepare("insert into user_(user_name, user_fname, user_lname, address, pass, phonenumber) values(?, ?, ?, ?, ?, ?)");
+		$stmt->bind_param("ssssss", $user_name, $user_fname, $user_lname, $address, $pass, $phonenumber);
 		$execval = $stmt->execute();
 		echo $execval;
-		echo "Registration successfully...";
-		header("refresh: 2; url=http://localhost/mini/index.html");
+		echo '<script>alert("Sign up Successfully");
+                window.location.href = "http://localhost/mini/login_customer.html"
+                </script>';
 		$stmt->close();
 		$conn->close();
 	}
