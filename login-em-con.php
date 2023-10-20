@@ -1,5 +1,5 @@
 <?php
-    $user_name = $_POST['user_name'];
+    $employee_name = $_POST['employee_name'];
     $pass = $_POST['pass'];
 
     $conn = new mysqli('localhost','root','','mnp');
@@ -7,8 +7,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	}else {
-		$stmt = $conn->prepare("select * from user_ where user_name = ?");
-        $stmt->bind_param("s",$user_name);
+		$stmt = $conn->prepare("select * from employee where employee_name = ?");
+        $stmt->bind_param("s",$employee_name);
         $stmt->execute();
         $stmt_result = $stmt->get_result();
         if($stmt_result->num_rows > 0){
