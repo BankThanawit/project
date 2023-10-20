@@ -14,13 +14,20 @@
         if($stmt_result->num_rows > 0){
             $data = $stmt_result->fetch_assoc();
             if($data['pass'] === $pass){
-                echo '<script>alert("login Successfully")</script>';
+                echo '<script>alert("login Successfully");
+                window.location.href = "http://localhost/mini/index.html"
+                </script>';
+                
                 
             }else{
-                echo '<script>alert("Invalid username or password")</script>'; 
+                echo '<script>alert("Invalid username or password")
+                window.location.href = "http://localhost/mini/login_customer.html"
+                </script>'; 
             }
         }else{
-            echo '<script>alert("Invalid username or password")</script>';
+            echo '<script>alert("Invalid username or password")
+            window.location.href = "http://localhost/mini/login_customer.html"
+            </script>';
         }
     }
 ?>
