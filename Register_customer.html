@@ -17,7 +17,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="post" action="con-register.php">
                           <div class="form-group">
                             <label for="user_id"><i class="zmdi zmdi-account material-icons-ID"></i></label>
                             <input type="text" name="user_id" id="user_id" placeholder="Your ID"/>
@@ -28,19 +28,23 @@
                             </div>
                             <div class="form-group">
                                 <label for="user_fname"><i class="zmdi zmdi-fname"></i></label>
-                                <input type="user_fname" name="user_fname" id="user_fname" placeholder="Your firstname"/>
+                                <input type="text" name="user_fname" id="user_fname" placeholder="Your firstname"/>
                             </div>
                             <div class="form-group">
                               <label for="user_lname"><i class="zmdi zmdi-lname"></i></label>
-                              <input type="user_lname" name="user_lname" id="user_lname" placeholder="Your lastname"/>
+                              <input type="text" name="user_lname" id="user_lname" placeholder="Your lastname"/>
                           </div>
                           <div class="form-group">
                             <label for="address"><i class="zmdi zmdi-address"></i></label>
-                            <input type="address" name="address" id="address" placeholder="address"/>
+                            <input type="text" name="address" id="address" placeholder="address"/>
                         </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <label for="pass"><i class="zmdi zmdi-pass"></i></label>
                                 <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumber"><i class="zmdi zmdi-phobe"></i></label>
+                                <input type="text" name="phonenumber" id="phonenumber" placeholder="phone number"/>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
