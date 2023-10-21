@@ -1,84 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Table 06</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Table 06</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="css/style-edit.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	</head>
-	<body>
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-4">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="table-wrap">
-						<table class="table">
-						  <thead class="thead-primary">
-						    <tr>
-						    	<th>&nbsp;</th>
-						    	<th>&nbsp;</th>
-						    	<th>Product</th>
-						      <th>Price</th>
-						      <th>Quantity</th>
+    <link rel="stylesheet" href="css/style-edit.css" />
+  </head>
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table">
+                <thead class="thead-primary">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
 
-						      <th>&nbsp;</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-							<form action="edit-pro-con.php" method="post">
-						    <tr class="alert" role="alert">
-						    	<td>
-						    		<label>
-										  
-									</label>
-						    	</td>
-						    	<td>
-						    		<div class="img">
-										<img src="images/<?php $row['imags'];?>" alt="">
-									</div>
-						    	</td>
-						      <td>
-						      	<div class="email">
-						      		<span>Ruler</span>
-						      		<span>Helps draw straighter and neater lines.</span>
-						      	</div>
-						      </td>
-						      <td>$25</td>
-						      <td class="quantity">
-					        	<select name="quantity" id="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-				          </td>
-				          
-						      <td>
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
-				          	</button>
-				        	</td>
-						    </tr>
-						</form>
-						  </tbody>
-						</table>
-					</div>
-                    <a href="add-porduct.html"><input type="button" class="btn" name="add_product" value="add product"></a>
-				</div>
-			</div>
-		</div>
-        
-	</section>
-	</body>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <form action="edit-pro-con.php" method="post">
+                    <tr class="alert" role="alert">
+                      <td>
+                        <label> </label>
+                      </td>
+                      <td>
+                        <div class="img">
+                          <img src="images/<?php $row['imags'];?>" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="email">
+                          <span>Ruler</span>
+                          <span>Helps draw straighter and neater lines.</span>
+                        </div>
+                      </td>
+                      <td>$25</td>
+                      <td class="quantity">
+                        <select name="quantity" id="quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </td>
+
+                      <td>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="alert"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">Edit</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </form>
+                </tbody>
+              </table>
+            </div>
+            <a href="add-porduct.html"
+              ><input
+                type="button"
+                class="btn"
+                name="add_product"
+                value="add product"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
