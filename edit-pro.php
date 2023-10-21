@@ -66,8 +66,8 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						      
 				          
 						      <td>
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
+						      	<a href="update-pro.html"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				            	<span aria-hidden="true">Edit</span></a>
 				          	</button>
 				        	</td>
 						    </tr>
