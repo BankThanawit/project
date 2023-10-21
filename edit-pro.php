@@ -1,3 +1,12 @@
+<?php
+@include 'edit-pro-con.php';
+?>
+
+<?php
+$select = mysqli_query($conn,"SELECT * FROM product");
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,6 +31,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="table-wrap">
+						<form action="edit-pro-con.php" method="post">
 						<table class="table">
 						  <thead class="thead-primary">
 						    <tr>
@@ -29,13 +39,12 @@
 						    	<th>&nbsp;</th>
 						    	<th>Product</th>
 						      <th>Price</th>
-						      <th>Quantity</th>
-
 						      <th>&nbsp;</th>
 						    </tr>
 						  </thead>
-						  <tbody>
-							<form action="edit-pro-con.php" method="post">
+						<?php while($row = mysqli_fetch_assoc($select)){
+							?>
+						<tbody>
 						    <tr class="alert" role="alert">
 						    	<td>
 						    		<label>
@@ -44,25 +53,17 @@
 						    	</td>
 						    	<td>
 						    		<div class="img">
-										<img src="images/<?php $row['imags'];?>" alt="">
+										<img width ="100px"; src="images/<?php echo $row['imags']?>" alt="">
 									</div>
 						    	</td>
 						      <td>
 						      	<div class="email">
-						      		<span>Ruler</span>
-						      		<span>Helps draw straighter and neater lines.</span>
+						      		<span><?php echo $row['product_name']?></span>
+						      		<span><?php echo $row['product_stype']?></span>
 						      	</div>
 						      </td>
-						      <td>$25</td>
-						      <td class="quantity">
-					        	<select name="quantity" id="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-				          </td>
+						      <td>$<?php echo $row['product_price']?></td>
+						      
 				          
 						      <td>
 						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -70,9 +71,13 @@
 				          	</button>
 				        	</td>
 						    </tr>
-						</form>
+						
 						  </tbody>
+						
+						<?php };
+						?>
 						</table>
+					</form>
 					</div>
                     <a href="add-porduct.html"><input type="button" class="btn" name="add_product" value="add product"></a>
 				</div>
