@@ -35,6 +35,7 @@
 						    </tr>
 						  </thead>
 						  <tbody>
+							<form action="edit-pro-con.php" method="post">
 						    <tr class="alert" role="alert">
 						    	<td>
 						    		<label>
@@ -42,7 +43,9 @@
 									</label>
 						    	</td>
 						    	<td>
-						    		<div class="img" style="background-image: url(images/บรรทัด.jpg);"></div>
+						    		<div class="img">
+										<img src="images/<?php $row['imags'];?>" alt="">
+									</div>
 						    	</td>
 						      <td>
 						      	<div class="email">
@@ -67,170 +70,7 @@
 				          	</button>
 				        	</td>
 						    </tr>
-
-						    <tr class="alert" role="alert">
-						    	<td>
-						    		<label>
-										  
-										</label>
-						    	</td>
-						    	<td>
-						    		<div class="img" style="background-image: url(images/ดินสอ.jpg);"></div>
-						    	</td>
-						      <td>
-						      	<div class="email">
-						      		<span>Pencil</span>
-						      		<span>It is a writing device. or artistic media</span>
-						      	</div>
-						      </td>
-						      <td>$35</td>
-						      <td class="quantity">
-					        	<select name="quantity" id="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-				          </td>
-				          
-						      <td>
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
-				          	</button>
-				        	</td>
-						    </tr>
-
-						    <tr class="alert" role="alert">
-						    	<td>
-						    		<label>
-										  
-										</label>
-						    	</td>
-						    	<td>
-						    		<div class="img" style="background-image: url(images/ยางลบ.jpg);"></div>
-						    	</td>
-						      <td>
-						      	<div class="email">
-						      		<span>Eraser</span>
-						      		<span>Used for erasing pencil marks written on materials such as paper.</span>
-						      	</div>
-						      </td>
-						      <td>$45</td>
-						      <td class="quantity">
-					        	<select name="quantity" id="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-				          </td>
-				          
-						      <td>
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
-				          	</button>
-				        	</td>
-						    </tr>
-
-						    <tr class="alert" role="alert">
-						    	<td>
-						    		<label>
-										  
-										</label>
-						    	</td>
-						    	<td>
-						    		<div class="img" style="background-image: url(images/กระดาษสี.jpeg);"></div>
-						    	</td>
-						      <td>
-						      	<div class="email">
-						      		<span>Colored paper</span>
-						      		<span>It is paper that is used for decoration.</span>
-						      	</div>
-						      </td>
-						      <td>$50</td>
-						      <td class="quantity">
-					        	<select name="quantity" id="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-				          </td>
-				          
-						      <td>
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
-				          	</button>
-				        	</td>
-						    </tr>
-
-						    <tr class="alert" role="alert">
-						    	<td class="border-bottom-0">
-						    		<label>
-										  </span>
-										</label>
-						    	</td>
-						    	<td class="border-bottom-0">
-						    		<div class="img" style="background-image: url(images/กระดาษa4.jpg);"></div>
-						    	</td>
-						      <td class="border-bottom-0">
-						      	<div class="email">
-						      		<span>A4 paper</span>
-						      		<span>Use as poster paper or forms.</span>
-						      	</div>
-						      </td>
-						      <td class="border-bottom-0">$100</td>
-						      <td class="quantity border-bottom-0">
-					        	<select name="quantity" id="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-				          </td>
-				          
-						      <td class="border-bottom-0">
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
-				          	</button>
-				        	</td>
-						    </tr>
-                            <tr class="alert" role="alert">
-						    	<td class="border-bottom-0">
-						    		<label>
-										  </span>
-										</label>
-						    	</td>
-						    	<td class="border-bottom-0">
-						    		<div class="img" style="background-image: url(images/กระดาษฟลิปชาร์ท.jpg);"></div>
-						    	</td>
-						      <td class="border-bottom-0">
-						      	<div class="email">
-						      		<span>Flip chart paper</span>
-						      		<span>Used for writing messages Suitable for various presentations.</span>
-						      	</div>
-						      </td>
-						      <td class="border-bottom-0">$200</td>
-						      <td class="quantity border-bottom-0">
-                                <select name="quantity" id="quantity">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                 <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-				          </td>
-				          
-						      <td class="border-bottom-0">
-						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
-				          	</button>
-				        	</td>
-                        </tr>
+						</form>
 						  </tbody>
 						</table>
 					</div>
