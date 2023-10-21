@@ -8274,4 +8274,19 @@
     color: #99b19c; }
     .checkbox-primary input:checked ~ .checkmark:after {
       color: #99b19c; }
+
+  .btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .1rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    background: #99b19c;
+    color: white;
+  }
+  .btn:hover{
+    background-color: cornsilk;
+  }
   

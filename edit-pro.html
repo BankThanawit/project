@@ -37,7 +37,7 @@
 						  <tbody>
 						    <tr class="alert" role="alert">
 						    	<td>
-						    		<label >
+						    		<label>
 										  
 									</label>
 						    	</td>
@@ -52,9 +52,13 @@
 						      </td>
 						      <td>$25</td>
 						      <td class="quantity">
-					        	<div class="input-group">
-				             	<input type="text" name="quantity" class="quantity form-control input-number" value="2" min="1" max="100">
-				          	</div>
+					        	<select name="quantity" id="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                     <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
 				          </td>
 				          
 						      <td>
@@ -226,13 +230,15 @@
 				            	<span aria-hidden="true">Edit</span>
 				          	</button>
 				        	</td>
-						    </tr
+                        </tr>
 						  </tbody>
 						</table>
 					</div>
+                    <input type="button" class="btn" name="add_product" value="add product">
 				</div>
 			</div>
 		</div>
+        
 	</section>
 	</body>
 </html>
