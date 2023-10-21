@@ -39,7 +39,6 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						    	<th>&nbsp;</th>
 						    	<th>Product</th>
 						      <th>Price</th>
-						      <th>&nbsp;</th>
 						    </tr>
 						  </thead>
 						<?php while($row = mysqli_fetch_assoc($select)){
@@ -65,11 +64,7 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						      <td>$<?php echo $row['product_price']?></td>
 						      
 				          
-						      <td>
-						      	<a href="update-pro.html"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span></a>
-				          	</button>
-				        	</td>
+						      
 						    </tr>
 						
 						  </tbody>
