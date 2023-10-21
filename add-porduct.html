@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addproduct     
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style-add.css">
+</head>
+<body>   
+    <div class="container">
+       <div class="admin-product-form-container">
+    
+        <form action="add-product.php" method="post" enctype="multipart/form-data">
+             <h3>add a new product</h3>
+             <input type="text" placeholder="enter product name" name="product_name" class="box">
+             <input type="number" placeholder="enter product price" name="product_price" class="box">
+             <input type="text" placeholder="enter product explain" name="product_stype" class="box">
+             <input type="file" accept="image/png, image/jpeg, image/jpg" name="imags" class="box">
+             <input type="submit" class="btn" name="add_product" value="add product">
+          </form>
+    
+       </div>
+    </div>
+    
+</body>
+</html>
