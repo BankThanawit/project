@@ -15,7 +15,7 @@
             $data = $stmt_result->fetch_assoc();
             if($data['pass'] === $pass){
                 echo '<script>alert("login Successfully");
-                window.location.href = "#"
+                window.location.href = "http://localhost/mini/edit-pro.php"
                 </script>';
                 
             }else{

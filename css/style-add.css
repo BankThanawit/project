@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --green:#27ae60;
-   --black:#333;
-   --white:#fff;
-   --bg-color:#eee;
+   --green:#d3290f;
+   --black:#000000;
+   --white:#e6770b;
+   --bg-color:#52d053;
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
    --border:.1rem solid var(--black);
 }
@@ -32,7 +32,7 @@ html{
    font-size: 1.7rem;
    padding:1rem 3rem;
    background: var(--green);
-   color:var(--white);
+   color: #fff;;
    text-align: center;
 }
 
@@ -125,4 +125,8 @@ html{
 
 .product-display .product-display-table .btn:last-child:hover{
    background: var(--black);
+}
+
+body{
+   background-color: #765898;
 }

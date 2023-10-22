@@ -8192,11 +8192,11 @@
     -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
     box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29); }
     .table thead.thead-primary {
-      background: #99b19c; }
+      background: #699384; }
     .table thead th {
       border: none;
       padding: 30px;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 500;
       color: white; }
     .table tbody tr {
@@ -8283,9 +8283,9 @@
     cursor: pointer;
     border-radius: .1rem;
     margin-top: 1rem;
-    font-size: 1.7rem;
+    font-size: 15px;
     padding: 1rem 3rem;
-    background: #001a33;
+    background: #699384;
     color: white;
   }
   .btn:hover{
