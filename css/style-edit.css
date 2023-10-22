@@ -7992,7 +7992,8 @@
     color: #fff !important; }
   
   .text-primary {
-    color: #007bff !important; }
+    color: #007bff !important;
+   }
   
   a.text-primary:hover, a.text-primary:focus {
     color: #0056b3 !important; }
@@ -8284,12 +8285,12 @@
     margin-top: 1rem;
     font-size: 1.7rem;
     padding: 1rem 3rem;
-    background: #99b19c;
+    background: #001a33;
     color: white;
   }
   .btn:hover{
     background-color: cornsilk;
   
   }
-  
+
   

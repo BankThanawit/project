@@ -16,7 +16,7 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Table 06</title>
+  	<title>ADD PRODUCT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -28,7 +28,7 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 
 	</head>
 	<body>
-	<section class="ftco-section"style="padding-top:50px;padding:50px;height:80vh;">
+	<section class="ftco-section"style="padding-top:50px;padding-button:50px;height:80vh;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-4">
@@ -43,7 +43,7 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						    <tr>
 						    	<th>&nbsp;</th>
 						    	<th>&nbsp;</th>
-						    	<th>Product</th>
+						    <th>Product</th>
 						      <th>Price</th>
 							  <th>&nbsp;</th>
 							  <th>&nbsp;</th>

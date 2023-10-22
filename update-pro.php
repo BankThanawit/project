@@ -40,7 +40,7 @@ if(isset($_POST['update_product'])){
     <link rel="stylesheet" href="css/style-add.css">
 </head>
 <body>   
-    <div class="container">
+    <div class="container"style="justify-content:center;padding-top:200px;padding-bottom:200px;height:100vh;">
        <div class="admin-product-form-container">
        <?php
       $select = mysqli_query($conn, "SELECT * FROM product WHERE product_id = '$id'");
