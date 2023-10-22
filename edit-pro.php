@@ -71,8 +71,8 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						      </td>
 						      <td>$<?php echo $row['product_price']?></td>
 							  <td>
-						      	<a href="update-pro.php?edit=<?php echo $row['id']; ?>"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true">Edit</span>
+						      	<a href="update-pro.php?edit=<?php echo $row['product_id']; ?>"><button type="button" class="close">
+				            	<span>Edit</span>
 				          	</button></a>
 				        	</td>
 							<td>
