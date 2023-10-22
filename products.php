@@ -80,16 +80,11 @@ $select = mysqli_query($conn, "SELECT * FROM product");
 												<?php echo $row['product_price'] ?>
 											</td>
 											<td>
-												<a href="update-pro.php?edit=<?php echo $row['product_id']; ?>"><button
-														type="button" class="close">
-														<span>Edit</span>
-													</button></a>
 											</td>
 											<td>
-												<a href="edit-pro.php?delete=<?php echo $row['product_id']; ?>"><button
-														type="button" class="close">
-														<span>Delete</span>
-													</button></a>
+												<a href='shop.php'><input type="button"
+														style="border-radius: 5px; width: 150px; height:100; color: white; font: size 20px; background-color: #FF4500; border: solid 2px #FF4500"
+														value="Buy"></a>
 											</td>
 										</tr>
 

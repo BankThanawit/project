@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login</title>
-  <link rel="stylesheet" href="css/Register.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <section class="sign-in" style="padding-top:110px;height:86vh;">
-    <div class="container" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/Register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="sign-in" style="padding-top: 110px; height: 86vh">
+      <div class="container">
         <div class="signin-content">
-            <div class="signin-image">
-                <figure><img src="images/about-img.png" alt="sing up image" style="justify-content:center;"></figure>
-            </div>
+          <div class="signin-image">
+            <figure>
+              <img
+                src="images/about-img.png"
+                alt="sing up image"
+                style="justify-content: center"
+              />
+            </figure>
+          </div>
 
-            <div class="signin-form">
-                <h2 class="form-title">Login</h2>
-                <form action="login-em-con.php" method="post" >
-                    <div class="form-group">
-                        <label for="employee_name"><i class="fa-solid fa-user"></i></label>
-                        <input type="text" name="employee_name" id="employee_name" placeholder="User name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="pass"><i class="fa-solid fa-lock"></i></label>
-                        <input type="password" name="pass" id="pass" placeholder="Password"/>
-                    </div>
-                    <div class="form-group form-button">
-                        <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                    </div>
-                </form>
-                
-            </div>
+          <div class="signin-form">
+            <h2 class="form-title">Login</h2>
+            <form action="login-em-con.php" method="post">
+              <div class="form-group">
+                <label for="employee_name"
+                  ><i class="fa-solid fa-user"></i
+                ></label>
+                <input
+                  type="text"
+                  name="employee_name"
+                  id="employee_name"
+                  placeholder="User name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pass"><i class="fa-solid fa-lock"></i></label>
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group form-button">
+                <input
+                  type="submit"
+                  name="signin"
+                  id="signin"
+                  class="form-submit"
+                  value="Log in"
+                />
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
-</section>
-</body>
+      </div>
+    </section>
+  </body>
 </html>
