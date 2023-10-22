@@ -183,7 +183,8 @@
     caption-side: bottom; }
   
   th {
-    text-align: inherit; }
+    text-align: inherit; 
+  }
   
   label {
     display: inline-block;
@@ -8290,4 +8291,5 @@
     background-color: cornsilk;
   
   }
+  
   
