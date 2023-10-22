@@ -1,117 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Table 06</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link rel="stylesheet" href="css/style-edit.css" />
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/addorder.css" />
+    <script
+      src="https://kit.fontawesome.com/92d70a2fd8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center mb-4"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="table-wrap">
-              <form action="edit-pro-con.php" method="post">
-                <table class="table">
-                  <thead class="thead-primary">
-                    <tr>
-                      <th>&nbsp;</th>
-                      <th>&nbsp;</th>
-                      <th>Product</th>
-                      <th>&nbsp;</th>
-                      <th>Price</th>
-                      <th>&nbsp;</th>
-                    </tr>
-                  </thead>
-                  <?php while($row = mysqli_fetch_assoc($select)){
-							?>
-                  <tbody>
-                    <tr class="alert" role="alert">
-                      <td>
-                        <label> </label>
-                      </td>
-                      <td>
-                        <div class="img">
-                          <img
-                            width="100px"
-                            ;
-                            src="images/<?php echo $row['imags']?>"
-                            alt=""
-                          />
-                        </div>
-                      </td>
-                      <td>
-                        <div class="email">
-                          <span><?php echo $row['product_name']?></span>
-                          <span><?php echo $row['product_stype']?></span>
-                        </div>
-                      </td>
-                      <th>&nbsp;</th>
-                      <td>$<?php echo $row['product_price']?></td>
-
-                      <td>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="alert"
-                          aria-label="Close"
-                        >
-                          <input
-                            type="number"
-                            style="
-                              font-size: 80%;
-                              width: 65px;
-                              border: 1px solid #000;
-                            "
-                            min="1"
-                            max="100"
-                            value="1"
-                            class="qty"
-                            name="qty"
-                          />
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-
-                  <?php };
-						?>
-                </table>
-              </form>
-            </div>
-            <br />
-            <input
-              type="button"
-              style="
-                color: white;
-                background-color: #ff4500;
-                border: 1px solid #ff4500;
-              "
-              onclick="history.back()"
-              value=" Close "
-            />
-          </div>
+    <div class="header">
+      <div align="right">
+      </div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        <p id="count">0</p>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div id="root"></div>
+      <div class="sidebar">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">$ 0.00</h2>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="devleft">
+    <input type="button" style="border-radius: 5px; width: 80px; height: 30px; color: white;background-color: #ff4500;border: 1px solid #ff4500;" onclick="history.back()" value="Close">
+    <script src="js/addorder.js"></script>
+    </div>
+    <br>
   </body>
 </html>
+
