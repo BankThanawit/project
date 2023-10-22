@@ -1,5 +1,11 @@
 <?php
 @include 'edit-pro-con.php';
+
+if(isset($_GET['delete'])){
+	$id = $_GET['delete'];
+	mysqli_query($conn, "DELETE FROM product WHERE product_id = $id");
+	header('location:edit-pro.php');
+ };
 ?>
 
 <?php
@@ -39,6 +45,8 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						    	<th>&nbsp;</th>
 						    	<th>Product</th>
 						      <th>Price</th>
+							  <th>&nbsp;</th>
+							  <th>&nbsp;</th>
 						    </tr>
 						  </thead>
 						<?php while($row = mysqli_fetch_assoc($select)){
@@ -62,9 +70,16 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 						      	</div>
 						      </td>
 						      <td>$<?php echo $row['product_price']?></td>
-						      
-				          
-						      
+							  <td>
+						      	<a href="update-pro.php?edit=<?php echo $row['id']; ?>"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				            	<span aria-hidden="true">Edit</span>
+				          	</button></a>
+				        	</td>
+							<td>
+						    <a href="edit-pro.php?delete=<?php echo $row['product_id']; ?>"><button type="button" class="close">
+				            	<span>Delete</span>
+				          	</button></a>
+				        	</td>
 						    </tr>
 						
 						  </tbody>
