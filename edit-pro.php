@@ -28,7 +28,7 @@ $select = mysqli_query($conn,"SELECT * FROM product");
 
 	</head>
 	<body>
-	<section class="ftco-section">
+	<section class="ftco-section"style="padding-top:50px;padding:50px;height:80vh;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-4">
