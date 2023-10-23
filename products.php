@@ -100,10 +100,11 @@ $select = mysqli_query($conn, "SELECT * FROM product");
 							?>
 						</table>
 					</form>
-				</div>
-				<input type="button" onclick="history.back()" value="close"><br>
+				</div><br>
+				<input type="button"
+					style="border-radius: 5px; width: 100px; height:100; color: white; font: size 20px; background-color: #FF4500; border: solid 2px #FF4500"" onclick="
+					history.back()" value="close"><br>
 			</div>
-			<br>
 		</div>
 	</div>
 
