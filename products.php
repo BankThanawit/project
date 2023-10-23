@@ -101,8 +101,9 @@ $select = mysqli_query($conn, "SELECT * FROM product");
 						</table>
 					</form>
 				</div>
-				<a href="add-porduct.html"><input type="button" class="btn" name="add_product" value="add product"></a>
+				<input type="button" onclick="history.back()" value="close"><br>
 			</div>
+			<br>
 		</div>
 	</div>
 
